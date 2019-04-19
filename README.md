@@ -15,7 +15,11 @@
 
 # 效果演示
 
-[查看demo请戳这里](http://ms.caibowen.net/)（请用chrome手机模式预览）
+建议使用chrome手机模式预览
+
+[腾讯云无服务云函数部署展示](http://msparis.ioobot.cn/)
+
+[原工程demo展示](http://ms.caibowen.net/)
 
 # 技术栈
 

@@ -5,5 +5,9 @@ module.exports = {
   defineConstants: {
   },
   weapp: {},
-  h5: {}
+  h5: {
+    output: {
+      publicPath: "http://case.ioobot.cn/taro-msparis/"
+    }
+  }
 }
