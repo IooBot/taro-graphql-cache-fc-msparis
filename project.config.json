@@ -1,0 +1,19 @@
+{
+	"miniprogramRoot": "dist/",
+	"projectname": "taro-msparis",
+	"description": "",
+	"appid": "",
+	"setting": {
+		"urlCheck": false,
+		"es6": false,
+		"postcss": false,
+		"minified": false,
+		"newFeature": true,
+		"autoAudits": false,
+		"checkInvalidKey": true
+	},
+	"compileType": "miniprogram",
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"condition": {}
+}
