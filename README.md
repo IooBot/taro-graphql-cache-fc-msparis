@@ -17,10 +17,6 @@
 
 [查看demo请戳这里](http://ms.caibowen.net/)（请用chrome手机模式预览）
 
-### H5版 && 微信小程序版
-
-<img src="screenshots/qr-code.png" width="250"/> <img src="screenshots/weapp-code.jpg" width="250"/>
-
 # 技术栈
 
 React + Taro + Dva + GraphQL + Sass + ES6/ES7
@@ -59,6 +55,7 @@ yarn run dev:h5
 1. 使用Graphql首先得创建schema，将原项目获取的数据分析修改创建schema, 数据结构可见本工程 **taro-msparis-fc.csv** 文件, 通过[ioobot workbench](http://workbench.ioobot.cn)部署至腾讯云。
 
 > taro-msparis graphql Endpoint: http://msparis.ioobot.cn/graphql
+
 > taro-msparis graphql IDE GraphiQL: http://msparis.ioobot.cn/ql
 
     Mongodb
@@ -126,8 +123,11 @@ src/pages/addressList/model.js  effects  *getAddressList 获取收货地址，�
 src/utils/crud.js 添加数据查询更新的方法
 
 **` QL.find_many(collection,condition,fields) `**
+
 **` QL.insert(collection,condition,fields) `**
+
 **` QL.update(collection,condition,fields) `**
+
 **` QL.remove(collection,condition) `**
 
 仿mongodb写法，第一个参数是集合名称，第二个参数是查询条件，第三个参数是返回字段名称, 返回Promise。
