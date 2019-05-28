@@ -9,7 +9,7 @@
 
 目前很多开发者使用Graphql，[React](https://reactjs.org/)中使用 **[Apollo Client](https://www.apollographql.com/docs/react/)** 创建Graphql客户端，但目前**Taro**中暂时还不支持Apollo Client的使用。
 
-我们提供一个graphql cache的库 **[graphql-sync-multi-platform](https://www.npmjs.com/package/graphql-sync-multi-platform)** 可以自动更新数据，同时可以用于taro，该项目的修改就是基于这个库来更新缓存数据。
+我们提供一个graphql cache的库 新版本：**[shortql](https://www.npmjs.com/package/shortql)** 旧版本：**[graphql-sync-multi-platform](https://www.npmjs.com/package/graphql-sync-multi-platform)** 可以自动更新数据，同时可以用于taro，该项目的修改就是基于这个库来更新缓存数据。
 
 如果你没有学习过graphql也不用担心，只需了解 **Mongodb** CRUD基本写法即可轻松上手。让我们来看看如何修改这个案例的吧。
 
@@ -69,6 +69,7 @@ yarn run dev:h5
     password: ioobot12345
 
 2. 引入 **[graphql-sync-multi-platform](https://www.npmjs.com/package/graphql-sync-multi-platform)**
+或引入 **[shortql](https://www.npmjs.com/package/shortql)**
 
 /src/config/index.js 添加graphql endpoint url
 `export const graphqlEndpoint = 'http://msparis.ioobot.cn/graphql';  // fc`
@@ -145,6 +146,20 @@ export default (options = {collection:'', condition:'', fields: '',}) => {
   });
 };
 ```
+
+## shortql新增了 open debug log
+
+**open**
+
+    QL.init(graphqlEndpoint, request, {enable_log : true});
+
+**close**
+
+default close console.log
+
+    QL.init(graphqlEndpoint, request);
+    QL.init(graphqlEndpoint, request, {enable_log : false});
+    
 
 4. 修改数据更新方式
 
